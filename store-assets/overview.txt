@@ -2,12 +2,20 @@ DiffFind Launcher
 
 Find what changed. Understand what matters.
 
-Open the hosted DiffFind application in a dedicated window from the Chrome toolbar. Launch again to return to the same window, preserving your current comparison. Closed the window? The next launch opens a fresh one.
+Open DiffFind in its own dedicated window straight from the Chrome toolbar. Launch again and you return to the same window, with your current comparison exactly as you left it. Close the window and the next launch opens a fresh one.
 
-How to use: click the DiffFind toolbar icon, then Open DiffFind.
+Features
+• One click from the toolbar opens DiffFind in a focused, app-style window
+• Re-launching restores and focuses your existing window instead of opening duplicates
+• Self-hosting friendly: set your own DiffFind address (for example https://difffind.example.com) in the Configure page, or reset to the default
+• No accounts, no tracking, no extra permissions
 
-This extension is a lightweight launcher. Comparisons run in the hosted DiffFind application at https://app.difffind.com, which requires an internet connection. This version does not include self-hosted configuration or page-content integration.
+How to use
+1. Click the DiffFind icon in the Chrome toolbar, then Open DiffFind.
+2. Self-hosting? Click Configure in the popup, enter your DiffFind URL, and Save.
 
-Permission: storage, used only to remember the application window ID for the current browser session. The extension does not read browsing history, document content, or AI-provider keys.
+About this extension
+This is a lightweight launcher. Comparisons run in the DiffFind web application, either the hosted version at https://app.difffind.com or your own instance, and require a connection to that site. The extension does not read page content, browsing history, documents, or AI-provider keys.
 
-Draft listing for development validation; publication readiness has not been established.
+Permission
+storage: remembers the ID of your DiffFind window for the current browser session and the site URL you configure. Nothing is sent anywhere by the extension.
