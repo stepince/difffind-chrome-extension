@@ -1,0 +1,13 @@
+DiffFind Launcher
+
+Find what changed. Understand what matters.
+
+Open the hosted DiffFind application in a dedicated window from the Chrome toolbar. Launch again to return to the same window, preserving your current comparison. Closed the window? The next launch opens a fresh one.
+
+How to use: click the DiffFind toolbar icon, then Open DiffFind.
+
+This extension is a lightweight launcher. Comparisons run in the hosted DiffFind application at https://app.difffind.com, which requires an internet connection. This version does not include self-hosted configuration or page-content integration.
+
+Permission: storage, used only to remember the application window ID for the current browser session. The extension does not read browsing history, document content, or AI-provider keys.
+
+Draft listing for development validation; publication readiness has not been established.
