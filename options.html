@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DiffFind Launcher Settings</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="options">
+    <main>
+      <h1 class="brand"><span>Diff</span><span>Find</span></h1>
+      <p class="subtitle">Launcher settings</p>
+      <form id="form" class="card">
+        <label for="url">Site URL</label>
+        <input
+          id="url"
+          type="url"
+          required
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="https://app.difffind.com"
+          aria-describedby="hint"
+        />
+        <p id="hint" class="hint">
+          Where DiffFind opens. Point this at your self-hosted instance, e.g.
+          <code>https://difffind.example.com</code>.
+        </p>
+        <div class="actions">
+          <button type="submit">Save</button>
+          <button type="button" id="reset">Reset</button>
+        </div>
+        <p id="status" class="ok" role="status" aria-live="polite"></p>
+      </form>
+    </main>
+    <script type="module" src="options.js"></script>
+  </body>
+</html>

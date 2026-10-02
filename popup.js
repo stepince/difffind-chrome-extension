@@ -1,3 +1,4 @@
+import { getAppUrl } from './config.js';
 const button = document.querySelector('#openDiffFind');
 const status = document.querySelector('#status');
 if (!(button instanceof HTMLButtonElement) || !(status instanceof HTMLElement))
@@ -17,4 +18,13 @@ button.addEventListener('click', async () => {
   } finally {
     button.disabled = false;
   }
+});
+
+document.querySelector('#settings')?.addEventListener('click', (event) => {
+  event.preventDefault();
+  chrome.runtime.openOptionsPage();
+});
+getAppUrl(chrome).then((href) => {
+  const host = document.querySelector('#host');
+  if (host) host.textContent = new URL(href).host;
 });

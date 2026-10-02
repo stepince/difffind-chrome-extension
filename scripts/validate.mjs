@@ -5,13 +5,13 @@ assert.equal(manifest.manifest_version, 3);
 assert.deepEqual(manifest.permissions, ['storage']);
 assert.equal(manifest.background.type, 'module');
 assert.equal(manifest.action.default_popup, 'popup.html');
+assert.equal(manifest.options_page, 'options.html');
 for (const forbidden of [
   'host_permissions',
   'content_scripts',
   'externally_connectable',
   'key',
   'update_url',
-  'options_page',
 ])
   assert.equal(manifest[forbidden], undefined);
 assert.equal(
@@ -32,6 +32,8 @@ for (const file of [
   'config.js',
   'launcher.js',
   'popup.js',
+  'options.html',
+  'options.js',
   'styles.css',
   'assets/wordmark.png',
 ])

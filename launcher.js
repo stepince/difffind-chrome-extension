@@ -1,4 +1,4 @@
-import { APP, WINDOW_KEY } from './config.js';
+import { APP, WINDOW_KEY, getAppUrl } from './config.js';
 /** @param {Pick<typeof chrome, 'windows' | 'storage'>} api */
 export function createLauncher(api) {
   /** @type {Promise<number> | undefined} */
@@ -34,7 +34,7 @@ export function createLauncher(api) {
       await api.storage.session.remove(WINDOW_KEY);
     }
     const created = await api.windows.create({
-      url: APP.url,
+      url: await getAppUrl(api),
       type: 'popup',
       focused: true,
       width: APP.width,

@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "description": "Open DiffFind in a dedicated application window, or return to the one you already have open.",
   "permissions": ["storage"],
+  "options_page": "options.html",
   "background": {
     "service_worker": "background.js",
     "type": "module"

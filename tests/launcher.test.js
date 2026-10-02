@@ -4,11 +4,17 @@ import { createLauncher } from '../launcher.js';
 import { APP, WINDOW_KEY } from '../config.js';
 function fixture() {
   const data = {};
+  const local = {};
   const windows = new Map();
   let nextId = 1;
   const calls = [];
   const api = {
     storage: {
+      local: {
+        async get() {
+          return { ...local };
+        },
+      },
       session: {
         async get() {
           return { ...data };
